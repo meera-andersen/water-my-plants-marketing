@@ -1,0 +1,141 @@
+.home {
+
+  .hero {
+    .border(); 
+    h2 {
+        margin-top: 20px;
+    }
+
+    @media @phone {
+      h2, p {
+        margin: 5%;
+      }  
+    }
+  } 
+
+  .content-section {
+    // margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @phone {
+      flex-direction: column;
+      margin: 5%;
+      width: 95%;
+
+      .text-content {
+        padding-top: 30px;
+        width: 90%;
+        margin: 0 auto 30px;
+      }
+
+      .content-pick {
+        margin: 5%;
+      }
+    }
+  }
+
+      
+      
+      
+      
+    } 
+
+    
+    .text-content {
+      width: 48%;
+      padding-top: 30px;
+      padding-right: 1%;
+    }
+
+    .img-content {
+      width: 48%;
+      padding-top: 30px;
+      padding-left: 1%;
+
+      img {
+        border-radius: 10px;
+      }
+
+      @media @phone {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+
+
+  .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .text-content {
+      padding-left: 1%;
+      padding-right: 0;
+    }
+
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
+
+      @media @phone {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .content-destination {
+    padding-top: 30px;
+    width: 75%;
+    margin: 0 auto 30px;
+    
+    img {
+      border-radius: 10px;
+    }
+
+    @media @phone {
+      width: 90%;
+    }
+  }
+
+  .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    @media @phone {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .destination {
+      width: 30%;
+      margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+        margin: 5%;
+      }
+    }
+
+    a button .btn {
+      .custom-button();
+
+      @media @phone {
+        .custom-button(400px);
+      }
+    }
+    
+    .btn {
+      .custom-button();
+
+      @media @phone {
+        .custom-button(400px);
+      }
+    }  
+  }
+// home
